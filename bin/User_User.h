@@ -20,7 +20,7 @@ JNIEXPORT jstring JNICALL Java_User_User_greeting
  * Method:    countItem
  * Signature: ([II)I
  */
-JNIEXPORT jint JNICALL Java_User_User_countItem
+JNIEXPORT jintArray JNICALL Java_User_User_countItem
   (JNIEnv *, jobject, jintArray, jint);
 
 #ifdef __cplusplus

@@ -22,6 +22,6 @@ public class User {
 
     private String name;
     public native String greeting(String name);
-    public native int countItem(int[] items, int size);
+    public native int[] countItem(int[] items, int size);
 
 }
