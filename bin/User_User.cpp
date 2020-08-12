@@ -24,6 +24,7 @@ JNIEXPORT jstring JNICALL Java_User_User_greeting (JNIEnv *env, jobject self, js
 JNIEXPORT jintArray JNICALL Java_User_User_countItem (JNIEnv * env, jobject self, jintArray intArray, jint size) {
     int vectorSize = (int) size;
     auto *intVector = new vector<int>( vectorSize );
+
     env->GetIntArrayRegion( intArray , 0, vectorSize, &(*intVector)[0] );
     auto mappedVector = new vector<int>;
 
