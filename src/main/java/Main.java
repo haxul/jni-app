@@ -1,14 +1,13 @@
+import Item.Item;
 import User.User;
-
-import java.util.Arrays;
 
 public class Main {
 
 
     public static void main(String[] args) {
         User user = new User();
-
-        int[] result = user.countItem(new int[]{1, 2, 3}, 3);
-        System.out.println(Arrays.toString(result));
+        Item item = new Item("towel", 99);
+        int price = user.getPrice(item);
+        System.out.println(price);
     }
 }

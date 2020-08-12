@@ -8,8 +8,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @AllArgsConstructor
 @Getter
 @Setter
@@ -23,5 +21,6 @@ public class User {
     private String name;
     public native String greeting(String name);
     public native int[] countItem(int[] items, int size);
+    public native int getPrice(Item item);
 
 }

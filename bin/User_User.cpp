@@ -38,3 +38,11 @@ JNIEXPORT jintArray JNICALL Java_User_User_countItem (JNIEnv * env, jobject self
     delete mappedVector;
     return output;
 }
+
+
+JNIEXPORT jint JNICALL Java_User_User_getPrice (JNIEnv * env, jobject self, jobject jitem) {
+    jclass jClassItem=env->FindClass("Item/Item");
+    jfieldID priceId = env->GetFieldID(jClassItem, "price", "I");
+    jint priceJint = env->GetIntField(jitem, priceId);
+    return priceJint;
+}

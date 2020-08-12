@@ -18,10 +18,18 @@ JNIEXPORT jstring JNICALL Java_User_User_greeting
 /*
  * Class:     User_User
  * Method:    countItem
- * Signature: ([II)I
+ * Signature: ([II)[I
  */
 JNIEXPORT jintArray JNICALL Java_User_User_countItem
   (JNIEnv *, jobject, jintArray, jint);
+
+/*
+ * Class:     User_User
+ * Method:    getPrice
+ * Signature: (LItem/Item;)I
+ */
+JNIEXPORT jint JNICALL Java_User_User_getPrice
+  (JNIEnv *, jobject, jobject);
 
 #ifdef __cplusplus
 }
